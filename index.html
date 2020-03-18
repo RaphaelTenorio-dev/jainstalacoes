@@ -87,8 +87,8 @@
                 data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
                 <span class="highlight-texts">Instalações em Geral</span>
                 </h1>
-
-                <p class="sp-layer"
+                <br><br><br>
+                <p class="sp-layer space"
                 data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
                     Redes de Dados, Elétricas e CFTV para sua Empresa
                 </p>
@@ -104,31 +104,14 @@
                 data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
                 <span class="highlight-texts">Soluções Corporativas</span>
                 </h1>
-
-                <p class="sp-layer"
+                <p class="sp-layer space"
                 data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
                     Trabalhos com eficiência e rapidez
                 </p>
             </div>
             <!-- Slides End -->
 
-            <!-- Slides -->
-            <div class="sp-slide main-slides">
-                <div class="img-overlay"></div>
-
-                <img class="sp-image" src="images/slider/slider-img-3.jpg" alt="Slider 3"/>
-
-                <h1 class="sp-layer slider-text-big"
-                data-position="center" data-show-transition="left" data-hide-transition="right" data-show-delay="1500" data-hide-delay="200">
-                <span class="highlight-texts">Feito com Segurança</span>
-                </h1>
-
-                <p class="sp-layer"
-                data-position="center" data-vertical="15%" data-show-delay="2000" data-hide-delay="200" data-show-transition="left" data-hide-transition="right">
-                    Atendendo à todos os padrões e normas pré-estabelecidas.
-                </p>
-            </div>
-            <!-- Slides End -->
+           
 
         </div>
     </section>
@@ -522,7 +505,8 @@
                     <div class="contact-form wow bounceInRight"> 
                 
        	<!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
-		<form name="sentMessage" id="contactForm"  novalidate>  
+		<form name="sentMessage" id="contactForm" action="mail.php"
+        method="post"  novalidate>  
 		 <div class="col-md-6">
 		<input type="text" class="form-control" 
 		placeholder="Nome Completo" id="name" required
@@ -530,7 +514,8 @@
 		<p class="help-block"></p>
 		</div> 	
 		 <div class="col-md-6">
-		<input type="email" class="form-control" placeholder="Email" 
+        <input type="email" class="form-control" placeholder="Email"
+        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" 
 		id="email" required
 		data-validation-required-message="Insira seu email" />
 		</div> 	
@@ -572,8 +557,9 @@
                     <p>Disponível via e-mail, telefone e whatsapp.</p>
 					<ul>
                             <li><i class="fa fa-home"></i>Itapevi-SP, Centro</li>
-                            <li><i class="fa fa-phone"></i>(11) 95868-1296</li>
-                            <li><i class="fa fa-envelope-o"></i>contato@jainstalacoes.com</li>
+                            <li><i class="fa fa-phone"></i><a href=”tel:+11958681296″>(11) 95868-1296</a></li>
+                            <li><i class="fa fa-whatsapp"></i><a href="https://wa.me/5511958681296?text=Olá%20meu%20amigo!">(11) 95868-1296</a></li>
+                            <li><i class="fa fa-envelope-o"></i><a href="mailto:contato@jainstalacoes.com">contato@jainstalacoes.com</a></li>
                         </ul> 
                 </div>
             </div>
@@ -589,11 +575,11 @@
 
                     <ul class="footer-social-info">
                         <li>
-                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.facebook.com/ja.instalacoes.56" target="_blank"><i class="fa fa-facebook"></i></a>
                         </li>
                         
                         <li>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/ja-instala%C3%A7%C3%B5es-santana-96bbbb13b/" target="_blank"><i class="fa fa-linkedin"></i></a>
                         </li>
                     </ul>
 					<br/><br/>

@@ -788,7 +788,9 @@ a.sp-video:after {
 	line-height: 1.4;
 	margin: 0;
 }
-
+.space{
+	top: 35% !important;
+}
 .slider-pro h2.sp-layer {
 	font-size: 24px;
 	line-height: 1.4;
