@@ -1,5 +1,5 @@
 <?php
-    $to = 'viper-rt10@hotmail.com';
+    $to = 'contato@jainstalacoes.com';
     $firstname = $_POST["name"];
     $email= $_POST["email"];
     $text= $_POST["message"];
@@ -21,7 +21,7 @@
 
     if (@mail($to, $email, $message, $headers))
     {
-        echo 'Sua mensagem foi enviada.';
+        echo 'Sua mensagem foi enviada. Pode fechar esta página.';
     }else{
         echo 'Envio falhou.';
     }
